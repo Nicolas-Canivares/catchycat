@@ -1,7 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://bv754wwdegp50"]
+[gd_scene load_steps=7 format=3 uid="uid://b52yrapx7pe5y"]
 
 [ext_resource type="Texture2D" uid="uid://bhgtu00c41gtt" path="res://assets/objetos/istockphoto-940788336-612x612.jpg" id="1_j87l1"]
-[ext_resource type="PackedScene" uid="uid://4clko02v5fop" path="res://escenas/objetos/arbol.tscn" id="2_ymy7k"]
+[ext_resource type="PackedScene" path="res://escenas/objetos/arbol.tscn" id="2_ymy7k"]
 [ext_resource type="Texture2D" uid="uid://d33rjr5ku4hap" path="res://assets/objetos/d515x5o-06ff39be-176b-45b9-ba03-6a02de4abecf.png" id="3_vttml"]
 [ext_resource type="PackedScene" uid="uid://dwbonn71s6viu" path="res://escenas/player/Player.tscn" id="4_6apml"]
 [ext_resource type="PackedScene" uid="uid://f4c0ntnldu2w" path="res://escenas/enemigo/Enemy.tscn" id="5_ymy7k"]

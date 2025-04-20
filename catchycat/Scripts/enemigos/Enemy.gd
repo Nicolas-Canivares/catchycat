@@ -23,6 +23,7 @@ func _physics_process(_delta):
 		# Patrulla
 		var direction = (target_patrol_point.global_position - global_position).normalized()
 		velocity = direction * speed
+		$AnimatedSprite2D.play("MovimientoEnemigo")
 
 		if global_position.distance_to(target_patrol_point.global_position) < 10:
 			if target_patrol_point == patrol_point_a:
