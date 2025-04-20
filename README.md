@@ -1,48 +1,83 @@
-# catchycat 🐈‍⬛
-Juego Jam 2025 CatchyCat
+# 🎮 CatchyCat 🐈‍⬛  
+**Juego Jam 2025 - CatchyCat**
 
-## Descripción
+## 🐾 Descripción  
+**CatchyCat** es un juego 2D pixel art con vista cenital (top-down), de aventura y recolección para un solo jugador. Controlás a un pequeño y escurridizo gatito morado que debe escapar de sus dueños, quienes intentan llevarlo al temido veterinario.  
 
-Juego 2D de un solo jugador, top-down pixelart de aventura y recolección en donde el jugador toma control de un pequeño gatito morado cuyo objetivo es huir de sus dueños, que pretenden llevarlo al veterinario, encontrando objetos que le ayudarán a escapar mientras se enfrenta a distintos enemigos y superando dificultades cada vez más complicadas.
+Para lograrlo, deberás recolectar objetos útiles, esconderte estratégicamente y esquivar a diversos enemigos que intentarán detener tu gran fuga. ¡La libertad felina está a unas patitas de distancia!
 
-### Género
-Aventura
-### Plataforma
-PC
-### Publico objetivo
-Jóvenes y adultos entre 13 a 27 años, amantes de los animalitos, específicamente gatos.
-### Motor usado
-Godot
+---
 
-### Cámara
-Dinámica, sigue al jugador
+## 🧭 Información General
 
-### Mecánicas
-    - Movimiento del jugador con WASD
-    - Recoger al interactuar con objetos claves para el progreso de niveles con la tecla E.
-    - Esconderse al interactuar con arbustos, cajas o basureros con la tecla E.
-    - Esquivar al presionar tecla Ctrl en el momento preciso del ataque del enemigo.
-    - Escapar/soltarse al presionar repetidas veces en un corto periodo de tiempo la tecla Space.
+- **🎮 Género:** Aventura  
+- **🖥️ Plataforma:** PC  
+- **🎯 Público objetivo:** Jóvenes y adultos (13 a 27 años), amantes de los animalitos, especialmente los gatos.  
+- **🛠️ Motor de juego:** Godot  
+- **📷 Cámara:** Dinámica, sigue al jugador  
 
-### Enemigos
+---
 
-#### Dueño
-Único enemigo que sigue constantemente al jugador, tiene su propia estamina por lo que eventualmente se cansará dándole unos segundos al jugador de poder alejarse. Cuando el jugador se esconde, el dueño deja de perseguirlo y recorre el mapa con un patrón determinado hasta que el jugador sale del escondite. En caso de ser atrapado por el dueño, el jugador deberá apretar repetidas veces el espacio para escapar del agarre.
+## 🕹️ Mecánicas Principales
 
-#### Niños
-Campo de visión. Los niños aparecen en los mapas del exterior de la casa (plaza, ciudad, etc) normalmente recurridos por infantes. Una vez perciben al jugador lo siguen hasta atraparlo, para escapar del agarre deberá apretar repetidas veces el espacio.
+- **Movimiento:** WASD  
+- **Interacción (recoger/esconderse):** `E`  
+- **Esquivar ataques:** `Ctrl` (en el momento justo)  
+- **Escapar del agarre:** Presionar `Espacio` repetidas veces en un corto periodo de tiempo  
 
-#### Godzilla Juguete
-Un Godzilla pequeño robot que pertenece a un niño, tira agua (no le gusta a los gatos) si detecta a alguien pasando por su zona.
+---
 
-#### Cuidado Animal
-Campo de visión. Aparecen mayormente en la ciudad (propuesta: dos en la ciudad, uno en la plaza). Si ven al jugador, lo persiguen hasta atacar con el bastón de captura que debe ser esquivado para sobrevivir. Para esquivarlos se debe apretar la tecla Ctrl en el momento preciso del ataque.
+## 🧟‍♂️ Enemigos
 
-#### Perros
-Campo de visión. Son los enemigos más rápidos cuando el jugador entra en el campo de visión, si se los esquiva correctamente tardan más tiempo en recuperarse. Para esquivarlos se debe apretar la tecla Ctrl en el momento preciso del ataque.
+### 🧑‍🦱 Dueño
+- Persigue constantemente al jugador.
+- Se cansa tras un tiempo, dando una oportunidad para escapar.
+- Si el jugador se esconde, deja de perseguirlo.
+- Si lo atrapa, se puede escapar presionando `Espacio` repetidas veces.
 
-#### Ratas
-En un nivel de alcantarillas.
+### 👶 Niños
+- Aparecen en mapas exteriores (plaza, ciudad).
+- Tienen campo de visión; si te ven, te siguen.
+- Atrapan al jugador y requieren `Espacio` repetido para liberarse.
 
-#### Palomas
-Quieren venganza por todas las veces que el gato se los quería comer, en la plaza porque son muchas.
+### 🦖 Godzilla Juguete
+- Pequeño robot que lanza agua al detectar movimiento.
+- Aparece en zonas específicas (ideal para momentos cómicos y estratégicos).
+
+### 🧑‍⚕️ Cuidado Animal
+- Usan bastones de captura.
+- Aparecen en la ciudad y la plaza.
+- Persiguen al jugador al verlo, y atacan: hay que esquivar con `Ctrl`.
+
+### 🐶 Perros
+- Muy rápidos y agresivos.
+- Reaccionan al campo de visión.
+- Se pueden esquivar con `Ctrl`. Tras esquivarlos, tardan en recuperarse.
+
+### 🐀 Ratas
+- Enemigos del nivel de alcantarillas.
+- (Se pueden expandir con mecánicas como roer cajas u obstruir caminos)
+
+### 🕊️ Palomas
+- Aparecen en la plaza.
+- Buscan venganza por años de acoso gatuno.
+- Pueden atacar en bandada o asustar al jugador.
+
+---
+
+## 💡 Ideas futuras
+
+- Mejoras para el gato (velocidad, sigilo, items tipo hierba gatera)
+- Niveles con condiciones climáticas (lluvia, viento, etc.)
+- Modos alternativos o desafíos extra
+
+---
+
+## 🧶 Créditos  
+(Dejás este espacio para los autores, arte, música, etc.)
+
+---
+
+## 🐾 Notas Finales  
+Este proyecto fue desarrollado para la **Game Workshop Jam 2025 - Tucuman** con mucho amor gatuno.  
+¡Esperamos que disfrutes escapando tanto como nosotros disfrutamos haciéndolo! 🐱✨
