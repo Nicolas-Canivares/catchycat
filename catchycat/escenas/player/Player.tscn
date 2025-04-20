@@ -1,0 +1,69 @@
+[gd_scene load_steps=11 format=3 uid="uid://dwbonn71s6viu"]
+
+[ext_resource type="Script" uid="uid://dds6jnkxphkgy" path="res://Scripts/player/jugador.gd" id="1_omvyu"]
+[ext_resource type="Texture2D" uid="uid://da74n7hxenpp4" path="res://assets/jugador/Dante sin fondo2.png" id="2_8o684"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ukil5"]
+atlas = ExtResource("2_8o684")
+region = Rect2(2, 2, 59, 105)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7st5j"]
+atlas = ExtResource("2_8o684")
+region = Rect2(63, 2, 59, 105)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cvhml"]
+atlas = ExtResource("2_8o684")
+region = Rect2(124, 2, 59, 105)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_btb33"]
+atlas = ExtResource("2_8o684")
+region = Rect2(185, 2, 59, 105)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qw2bf"]
+atlas = ExtResource("2_8o684")
+region = Rect2(246, 2, 59, 105)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g5h5a"]
+atlas = ExtResource("2_8o684")
+region = Rect2(307, 2, 59, 105)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_o2m60"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ukil5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7st5j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cvhml")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_btb33")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qw2bf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g5h5a")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hcpjn"]
+radius = 25.0
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_omvyu")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(4, -4)
+sprite_frames = SubResource("SpriteFrames_o2m60")
+frame_progress = 0.0769088
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3, 42)
+shape = SubResource("CircleShape2D_hcpjn")

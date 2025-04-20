@@ -1,0 +1,83 @@
+[gd_scene load_steps=13 format=3 uid="uid://f4c0ntnldu2w"]
+
+[ext_resource type="Script" uid="uid://b6c1u1seknoew" path="res://Scripts/enemigos/Enemy.gd" id="1_2hac7"]
+[ext_resource type="Texture2D" uid="uid://cpmnhjeqobhef" path="res://assets/jugador/vergil y dante.png" id="2_e6d4v"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6do27"]
+atlas = ExtResource("2_e6d4v")
+region = Rect2(2, 2396, 84, 109)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rvmyp"]
+atlas = ExtResource("2_e6d4v")
+region = Rect2(88, 2396, 84, 109)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2nxwx"]
+atlas = ExtResource("2_e6d4v")
+region = Rect2(174, 2396, 84, 109)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_52xpa"]
+atlas = ExtResource("2_e6d4v")
+region = Rect2(260, 2396, 84, 109)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jdgko"]
+atlas = ExtResource("2_e6d4v")
+region = Rect2(346, 2396, 84, 109)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j4qr3"]
+atlas = ExtResource("2_e6d4v")
+region = Rect2(432, 2396, 84, 109)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_73x2u"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6do27")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rvmyp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2nxwx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_52xpa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jdgko")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j4qr3")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2iwxp"]
+radius = 24.7386
+
+[sub_resource type="GDScript" id="GDScript_s7bn3"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4v6dm"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_2hac7")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_73x2u")
+frame_progress = 0.151371
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3, 44)
+shape = SubResource("CircleShape2D_2iwxp")
+
+[node name="Area2D" type="Area2D" parent="."]
+script = SubResource("GDScript_s7bn3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-74, -39)
+scale = Vector2(6.86004, -8.79861)
+shape = SubResource("CircleShape2D_4v6dm")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

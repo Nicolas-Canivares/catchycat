@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://4clko02v5fop"]
+
+[ext_resource type="Texture2D" uid="uid://d33rjr5ku4hap" path="res://assets/objetos/d515x5o-06ff39be-176b-45b9-ba03-6a02de4abecf.png" id="1_omjyp"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rcsqm"]
+radius = 34.025
+height = 319.967
+
+[node name="Arbol" type="StaticBody2D"]
+
+[node name="D515x5o-06Ff39Be-176b-45b9-ba03-6a02De4Abecf" type="Sprite2D" parent="."]
+position = Vector2(-2, -303)
+texture = ExtResource("1_omjyp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 38)
+rotation = 1.55655
+shape = SubResource("CapsuleShape2D_rcsqm")

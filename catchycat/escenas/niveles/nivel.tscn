@@ -1,0 +1,57 @@
+[gd_scene load_steps=7 format=3 uid="uid://bv754wwdegp50"]
+
+[ext_resource type="Texture2D" uid="uid://bhgtu00c41gtt" path="res://assets/objetos/istockphoto-940788336-612x612.jpg" id="1_j87l1"]
+[ext_resource type="PackedScene" uid="uid://4clko02v5fop" path="res://escenas/objetos/arbol.tscn" id="2_ymy7k"]
+[ext_resource type="Texture2D" uid="uid://d33rjr5ku4hap" path="res://assets/objetos/d515x5o-06ff39be-176b-45b9-ba03-6a02de4abecf.png" id="3_vttml"]
+[ext_resource type="PackedScene" uid="uid://dwbonn71s6viu" path="res://escenas/player/Player.tscn" id="4_6apml"]
+[ext_resource type="PackedScene" uid="uid://f4c0ntnldu2w" path="res://escenas/enemigo/Enemy.tscn" id="5_ymy7k"]
+
+[sub_resource type="GDScript" id="GDScript_ymy7k"]
+script/source = "extends Node2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[node name="Nivel" type="Node2D"]
+y_sort_enabled = true
+script = SubResource("GDScript_ymy7k")
+
+[node name="Istockphoto-940788336-612x612" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(537, 190)
+scale = Vector2(2.48003, 1.61099)
+texture = ExtResource("1_j87l1")
+
+[node name="Arbol" parent="." instance=ExtResource("2_ymy7k")]
+position = Vector2(217, 135)
+scale = Vector2(0.205749, 0.175129)
+
+[node name="Arbol2" parent="." instance=ExtResource("2_ymy7k")]
+position = Vector2(553, 383)
+scale = Vector2(0.188983, 0.190551)
+
+[node name="D515x5o-06Ff39Be-176b-45b9-ba03-6a02De4Abecf" type="Sprite2D" parent="."]
+position = Vector2(716, 113)
+scale = Vector2(0.189648, 0.217392)
+texture = ExtResource("3_vttml")
+
+[node name="Player" parent="." instance=ExtResource("4_6apml")]
+position = Vector2(181, 316)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+
+[node name="CharacterBody2D2" parent="." instance=ExtResource("5_ymy7k")]
+position = Vector2(554, 205)
+
+[node name="PatrolPointA" type="Node2D" parent="."]
+
+[node name="PatrolPointB" type="Node2D" parent="."]
+position = Vector2(337, 268)
