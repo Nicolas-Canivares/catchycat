@@ -42,10 +42,6 @@ func update_animation():
 		$AnimatedSprite2D.flip_h = direction.x < 0
 	else:
 		$AnimatedSprite2D.play("Idle")
-		
-#func update_prompt():
-#	$HidePromptLabel.visible = can_hide and not is_hidden
-#	$HidePromptLabel/E/AnimationPlayer.play("LetraE")
 	
 func update_prompt():
 	var label = $HidePromptLabel
