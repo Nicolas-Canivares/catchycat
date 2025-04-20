@@ -1,11 +1,23 @@
 extends CharacterBody2D
 
+@export var speed := 200  # Velocidad de movimiento
 
-# Called when the node enters the scene tree for the first time.
+var direction := Vector2.ZERO
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
-	var direccion = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
-	velocity = direccion * 200
+	direction = Vector2.ZERO
+
+	# Movimiento
+	if Input.is_action_pressed("ui_right"):
+		direction.x += 1
+	if Input.is_action_pressed("ui_left"):
+		direction.x -= 1
+	if Input.is_action_pressed("ui_down"):
+		direction.y += 1
+	if Input.is_action_pressed("ui_up"):
+		direction.y -= 1
+
+	direction = direction.normalized()
+	velocity = direction * speed
 	move_and_slide()

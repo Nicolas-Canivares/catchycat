@@ -54,12 +54,6 @@ func update_prompt():
 		tween.tween_property(label, "modulate:a", 0.0, 0.3)
 	
 
-#func esta_escondido():
-#	if is_hidden == true:
-#		$AnimatedSprite2D.play("EscondidoArbusto")
-#	elif is_hidden == false:
-#		$AnimatedSprite2D.play("ArbustoQuieto")
-
 func esta_escondido():
 	if arbusto_actual != null:
 		arbusto_actual.jugador_esta_oculto(is_hidden)
