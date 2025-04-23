@@ -12,14 +12,15 @@ func _physics_process(delta):
 	direction = Vector2.ZERO
 
 	# Movimiento
-	if Input.is_action_pressed("ui_right"):
-		direction.x += 1
-	if Input.is_action_pressed("ui_left"):
-		direction.x -= 1
-	if Input.is_action_pressed("ui_down"):
-		direction.y += 1
-	if Input.is_action_pressed("ui_up"):
-		direction.y -= 1
+	if is_hidden == false:
+		if Input.is_action_pressed("ui_right"):
+			direction.x += 1
+		if Input.is_action_pressed("ui_left"):
+			direction.x -= 1
+		if Input.is_action_pressed("ui_down"):
+			direction.y += 1
+		if Input.is_action_pressed("ui_up"):
+			direction.y -= 1
 
 	direction = direction.normalized()
 	velocity = direction * speed
@@ -28,7 +29,7 @@ func _physics_process(delta):
 	# Ocultarse con E
 	if can_hide and Input.is_action_just_pressed("ui_accept"):
 		is_hidden = not is_hidden
-		modulate.a = 0.1 if is_hidden else 1.0
+		modulate.a = 0.0 if is_hidden else 1.0
 		esta_escondido()
 
 	update_animation()
