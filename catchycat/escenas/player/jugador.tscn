@@ -1,10 +1,43 @@
-[gd_scene load_steps=36 format=3 uid="uid://b8jtp7c6p0a1q"]
+[gd_scene load_steps=46 format=3 uid="uid://b8jtp7c6p0a1q"]
 
 [ext_resource type="Texture2D" uid="uid://b108oc2atyqfp" path="res://assets/jugador/Idle (32x32).png" id="1_grn6b"]
 [ext_resource type="Script" uid="uid://60eru4nc0oo0" path="res://Scripts/player/MovimientoJugador.gd" id="1_w2vcx"]
 [ext_resource type="Texture2D" uid="uid://b2pu6oy6uvh7y" path="res://assets/jugador/Run (32x32).png" id="2_km2qa"]
+[ext_resource type="Texture2D" uid="uid://dauqmsnf3iifb" path="res://assets/jugador/prototipoGato1.png" id="2_l63m8"]
 [ext_resource type="FontFile" uid="uid://xrimep40kvp2" path="res://assets/fuentes/PeaberryBase.ttf" id="4_4fw4h"]
 [ext_resource type="Texture2D" uid="uid://fa5g0qp2yd54" path="res://assets/teclas/e.png" id="5_ytybs"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2m6hl"]
+atlas = ExtResource("2_l63m8")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_40h51"]
+atlas = ExtResource("2_l63m8")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cbf4y"]
+atlas = ExtResource("2_l63m8")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sv3cw"]
+atlas = ExtResource("2_l63m8")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8uw8g"]
+atlas = ExtResource("2_l63m8")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nlb4o"]
+atlas = ExtResource("2_l63m8")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qprdo"]
+atlas = ExtResource("2_l63m8")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_krstv"]
+atlas = ExtResource("2_l63m8")
+region = Rect2(224, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_grn6b"]
 atlas = ExtResource("1_grn6b")
@@ -49,6 +82,10 @@ region = Rect2(288, 0, 32, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_ro6s5"]
 atlas = ExtResource("1_grn6b")
 region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l63m8"]
+atlas = ExtResource("2_l63m8")
+region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4jmf4"]
 atlas = ExtResource("2_km2qa")
@@ -102,6 +139,35 @@ region = Rect2(352, 0, 32, 32)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_2m6hl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_40h51")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cbf4y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sv3cw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8uw8g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nlb4o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qprdo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_krstv")
+}],
+"loop": true,
+"name": &"CaminarGato",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_grn6b")
 }, {
 "duration": 1.0,
@@ -137,6 +203,14 @@ animations = [{
 "loop": true,
 "name": &"Idle",
 "speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l63m8")
+}],
+"loop": true,
+"name": &"IdleGato",
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -250,8 +324,8 @@ script = ExtResource("1_w2vcx")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_km2qa")
-animation = &"Run"
-frame_progress = 0.620589
+animation = &"IdleGato"
+frame_progress = 0.363974
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 2)
