@@ -58,3 +58,6 @@ func update_prompt():
 func esta_escondido():
 	if arbusto_actual != null:
 		arbusto_actual.jugador_esta_oculto(is_hidden)
+		
+func is_hidden_func() -> bool:
+	return is_hidden
