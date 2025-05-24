@@ -414,8 +414,8 @@ script = ExtResource("1_w2vcx")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_km2qa")
-animation = &"RunGatoNegro"
-frame_progress = 0.543871
+animation = &"IdleGatoNegro"
+frame_progress = 0.0779005
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 2)
