@@ -1,11 +1,11 @@
 [gd_scene load_steps=16 format=4 uid="uid://dgdpknfxwl5gm"]
 
 [ext_resource type="PackedScene" uid="uid://b8jtp7c6p0a1q" path="res://escenas/player/jugador.tscn" id="1_c7648"]
-[ext_resource type="Texture2D" uid="uid://b5weswd8g7w0y" path="res://Assets/TileSets/Tilemap_Flat.png" id="3_aa4oa"]
+[ext_resource type="Texture2D" uid="uid://b5weswd8g7w0y" path="res://assets/tilesets/Tilemap_Flat.png" id="3_aa4oa"]
 [ext_resource type="Texture2D" uid="uid://dcilqtifwyu2v" path="res://assets/tilesets/Pasto_Tierra.png" id="3_bakxy"]
 [ext_resource type="PackedScene" uid="uid://biwavwyhdcov0" path="res://escenas/objetos/caja.tscn" id="4_dlr1y"]
-[ext_resource type="Texture2D" uid="uid://bjccf3y81884b" path="res://Assets/TileSets/Foam.png" id="4_r7a30"]
-[ext_resource type="Texture2D" uid="uid://dcdg6e6dnu2ud" path="res://Assets/TileSets/Bridge_All.png" id="5_1kjm8"]
+[ext_resource type="Texture2D" uid="uid://bjccf3y81884b" path="res://assets/tilesets/Foam.png" id="4_r7a30"]
+[ext_resource type="Texture2D" uid="uid://dcdg6e6dnu2ud" path="res://assets/tilesets/Bridge_All.png" id="5_1kjm8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5lb5d"]
 texture = ExtResource("3_aa4oa")
