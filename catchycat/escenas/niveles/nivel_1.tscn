@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://biwavwyhdcov0" path="res://escenas/objetos/caja.tscn" id="4_dlr1y"]
 [ext_resource type="Texture2D" uid="uid://bjccf3y81884b" path="res://assets/tilesets/Foam.png" id="4_r7a30"]
 [ext_resource type="Texture2D" uid="uid://dcdg6e6dnu2ud" path="res://assets/tilesets/Bridge_All.png" id="5_1kjm8"]
-[ext_resource type="PackedScene" uid="uid://f4c0ntnldu2w" path="res://escenas/enemigo/Enemy.tscn" id="7_tbi8e"]
+
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5lb5d"]
 texture = ExtResource("3_aa4oa")

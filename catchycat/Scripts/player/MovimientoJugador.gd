@@ -35,14 +35,12 @@ func _physics_process(delta):
 	update_animation()
 	update_prompt()
 	
-
-
 func update_animation():
 	if direction != Vector2.ZERO:
-		$AnimatedSprite2D.play("CaminarGato")
+		$AnimatedSprite2D.play("RunGatoNegro")
 		$AnimatedSprite2D.flip_h = direction.x < 0
 	else:
-		$AnimatedSprite2D.play("IdleGato")
+		$AnimatedSprite2D.play("IdleGatoNegro")
 	
 func update_prompt():
 	var label = $HidePromptLabel
