@@ -6,11 +6,29 @@ var arbusto_actual = null
 var is_hidden := false
 var can_hide := false  # Puede esconderse si está cerca de una caja
 var direction := Vector2.ZERO
+var is_trapped := false
+var mash_count := 0
+var mash_threshold := 10  # Número de veces que hay que presionar Espacio para liberarse
+signal jugador_liberado
+var is_intangible := false
+
 #var stamina = 100
 
 func _physics_process(delta):
 	direction = Vector2.ZERO
+	if is_trapped:
+		if Input.is_action_just_pressed("ui_select"):  # 'ui_select' suele ser Espacio
+			mash_count += 1
+			print("Mash count: ", mash_count)
+			if mash_count >= mash_threshold:
+				is_trapped = false
+				mash_count = 0
+				print("¡Liberado!")
+				emit_signal("jugador_liberado")
 
+		return  # Bloquea movimiento si está atrapado
+
+	
 	# Movimiento
 	if is_hidden == false:
 		if Input.is_action_pressed("ui_right"):
@@ -59,3 +77,11 @@ func esta_escondido():
 		
 func is_hidden_func() -> bool:
 	return is_hidden
+func is_trapped_func() -> bool:
+	return is_trapped
+
+	
+func trap_player():
+	is_trapped = true
+	mash_count = 0
+	print("¡Jugador atrapado! Presioná espacio para liberarte.")

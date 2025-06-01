@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=4 uid="uid://cdmhgoihy3rrx"]
+[gd_scene load_steps=19 format=4 uid="uid://cdmhgoihy3rrx"]
 
 [ext_resource type="Texture2D" uid="uid://b5weswd8g7w0y" path="res://assets/tilesets/Tilemap_Flat.png" id="1_3uhe0"]
 [ext_resource type="Texture2D" uid="uid://dcilqtifwyu2v" path="res://assets/tilesets/Pasto_Tierra.png" id="2_f28tu"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://dcdg6e6dnu2ud" path="res://assets/tilesets/Bridge_All.png" id="5_e3kd1"]
 [ext_resource type="PackedScene" uid="uid://b8jtp7c6p0a1q" path="res://escenas/player/jugador.tscn" id="6_q8y26"]
 [ext_resource type="PackedScene" uid="uid://biwavwyhdcov0" path="res://escenas/objetos/caja.tscn" id="7_wn4u4"]
+[ext_resource type="PackedScene" uid="uid://f4c0ntnldu2w" path="res://escenas/enemigo/Enemy.tscn" id="8_f28tu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5lb5d"]
 texture = ExtResource("1_3uhe0")
@@ -1491,3 +1492,12 @@ position = Vector2(502, 85)
 
 [node name="Caja4" parent="." instance=ExtResource("7_wn4u4")]
 position = Vector2(676, 84)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("8_f28tu")]
+position = Vector2(1149, 386)
+
+[node name="PatrolPointA" type="Node2D" parent="."]
+position = Vector2(1201, 163)
+
+[node name="PatrolPointB" type="Node2D" parent="."]
+position = Vector2(1235, 451)
