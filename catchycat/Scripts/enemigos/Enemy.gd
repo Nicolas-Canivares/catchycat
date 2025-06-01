@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var speed := 100.0
+@export var speed := 220.0
 var player_in_sight := false
 var has_seen_player := false
 var player: Node2D = null
@@ -82,9 +82,9 @@ func _on_jugador_liberado():
 
 	# Activar parpadeo visual en el jugador
 	if player and player.has_method("empezar_intangibilidad_durante"):
-		player.empezar_intangibilidad_durante(3.0)
+		player.empezar_intangibilidad_durante(1.5)
 
-	await get_tree().create_timer(3.0).timeout
+	await get_tree().create_timer(1.5).timeout
 	can_catch_player = true
 	is_waiting_after_release = false
 

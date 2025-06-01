@@ -200,8 +200,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_h0eld"]
-radius = 11.0
-height = 40.0
+radius = 4.99673
+height = 23.9623
 
 [sub_resource type="GDScript" id="GDScript_s7bn3"]
 
@@ -209,13 +209,15 @@ height = 40.0
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_2hac7")
+speed = 200.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_73x2u")
 frame_progress = 0.319681
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1, 18)
+position = Vector2(1.42109e-14, 22)
+rotation = 3.15867
 shape = SubResource("CapsuleShape2D_h0eld")
 
 [node name="Area2D" type="Area2D" parent="."]
