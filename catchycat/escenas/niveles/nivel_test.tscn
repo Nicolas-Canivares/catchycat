@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=4 uid="uid://bvphvofnfcxct"]
+[gd_scene load_steps=10 format=4 uid="uid://bvphvofnfcxct"]
 
 [ext_resource type="Texture2D" uid="uid://c2urgiavvjxno" path="res://assets/tilesets/modern_exteriors/1_Terrains_and_Fences_32x32.png" id="1_veklx"]
 [ext_resource type="Texture2D" uid="uid://b8qqr8w3w5br1" path="res://assets/tilesets/modern_exteriors/2_City_Terrains_32x32.png" id="2_hrgjg"]
 [ext_resource type="PackedScene" uid="uid://b8jtp7c6p0a1q" path="res://escenas/player/jugador.tscn" id="3_ybbh7"]
 [ext_resource type="PackedScene" uid="uid://deedk8835vv4s" path="res://escenas/objetos/fuente.tscn" id="4_hrgjg"]
 [ext_resource type="Script" uid="uid://crknvhmnmxhrg" path="res://escenas/objetos/fuente.gd" id="5_ybbh7"]
+[ext_resource type="PackedScene" uid="uid://b0fndlvly06io" path="res://escenas/objetos/basurero.tscn" id="6_i1hx0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i1hx0"]
 texture = ExtResource("1_veklx")
@@ -5065,3 +5066,6 @@ position = Vector2(565, 697)
 [node name="Fuente" parent="TileMapLayer" instance=ExtResource("4_hrgjg")]
 position = Vector2(804, 745)
 script = ExtResource("5_ybbh7")
+
+[node name="Basurero" parent="TileMapLayer" instance=ExtResource("6_i1hx0")]
+position = Vector2(1304, 737)
