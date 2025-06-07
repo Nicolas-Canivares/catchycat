@@ -1,0 +1,67 @@
+[gd_scene load_steps=10 format=3 uid="uid://deedk8835vv4s"]
+
+[ext_resource type="Texture2D" uid="uid://dy2mmflith3ep" path="res://assets/objetos/modern_exteriors/Garden_Fountain_5_32x32.png" id="1_uvh5n"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_17jcd"]
+atlas = ExtResource("1_uvh5n")
+region = Rect2(0, 0, 128, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kp42f"]
+atlas = ExtResource("1_uvh5n")
+region = Rect2(128, 0, 128, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8rf0d"]
+atlas = ExtResource("1_uvh5n")
+region = Rect2(256, 0, 128, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cexh6"]
+atlas = ExtResource("1_uvh5n")
+region = Rect2(384, 0, 128, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_snn5c"]
+atlas = ExtResource("1_uvh5n")
+region = Rect2(512, 0, 128, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_017xu"]
+atlas = ExtResource("1_uvh5n")
+region = Rect2(640, 0, 128, 160)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xswnx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_17jcd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kp42f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8rf0d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cexh6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_snn5c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_017xu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cfviv"]
+radius = 63.0079
+
+[node name="Area2D" type="Area2D"]
+disable_mode = 1
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_xswnx")
+frame_progress = 0.589181
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 17)
+shape = SubResource("CircleShape2D_cfviv")

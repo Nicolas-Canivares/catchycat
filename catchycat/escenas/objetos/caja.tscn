@@ -1,8 +1,8 @@
 [gd_scene load_steps=36 format=3 uid="uid://biwavwyhdcov0"]
 
-[ext_resource type="Script" uid="uid://hrwcassqecpp" path="res://Scripts/objetos/caja.gd" id="1_d4mnf"]
-[ext_resource type="Texture2D" uid="uid://bwqyp4mhinwwf" path="res://Assets/Objetos/09.png" id="2_d4mnf"]
-[ext_resource type="Texture2D" uid="uid://cv168ad08x7ba" path="res://Assets/Objetos/arbustoQuieto.png" id="2_rloh8"]
+[ext_resource type="Script" uid="uid://mlnp8tmb2d4y" path="res://Scripts/objetos/caja.gd" id="1_d4mnf"]
+[ext_resource type="Texture2D" uid="uid://bwqyp4mhinwwf" path="res://assets/objetos/09.png" id="2_d4mnf"]
+[ext_resource type="Texture2D" uid="uid://cv168ad08x7ba" path="res://assets/objetos/arbustoQuieto.png" id="2_rloh8"]
 [ext_resource type="Texture2D" uid="uid://bqswjgll4y30d" path="res://assets/objetos/ARBUSTO_SPRITE_SHEET_ANIMACION_OJOS.png" id="3_kftpb"]
 [ext_resource type="Texture2D" uid="uid://drrbs7su0c3qg" path="res://assets/objetos/ARBUSTO_SPRITE_SHEET_ANIMACION_ENTRA_PJ.png" id="4_kftpb"]
 
